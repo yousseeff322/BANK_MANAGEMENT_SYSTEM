@@ -1,10 +1,12 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "header.h"
 #include "function.h"
 
 int main()
 {
     int choice;
+    int inputValid = 0;
 
 
     while (1) {
@@ -18,8 +20,15 @@ int main()
         printf("6: Perform a transaction\n");
         printf("7: Exit\n");
 
-        scanf("%d", &choice);
-        printf("\n\n");
+
+        if (scanf("%d", &choice) != 1) {
+            // If input is not an integer, clear the input buffer and show an error message
+            printf("Invalid input. Please enter a valid integer.\n");
+            fflush(stdin); // Clear the input buffer
+        } else {
+            inputValid = 1; // Set inputValid to 1 to exit the loop
+        }
+            printf("\n\n");
 
         switch (choice) {
             case 1:

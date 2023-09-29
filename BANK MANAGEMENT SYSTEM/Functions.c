@@ -39,7 +39,6 @@ void add_account() {
     new_node->next = head;
     head = new_node;
 }
-
 void delete_account() {
     int account_key;
     printf("\nEnter the account key of the customer to be deleted: ");
@@ -66,7 +65,6 @@ void delete_account() {
 
     printf("Customer with account key %d not found.\n", account_key);
 }
-
 void edit_account() {
     int account_key;
     printf("\nEnter the account key of the customer to be edited: ");
@@ -76,23 +74,56 @@ void edit_account() {
 
     while (current_node != NULL) {
         if (current_node->customer_info.id_key == account_key) {
-            printf("Enter the customer's name: ");
-            fflush(stdin);
-            gets(current_node->customer_info.customer_name);
-            printf("Enter the customer's address: ");
-            fflush(stdin);
-            gets(current_node->customer_info.customer_address);
-            printf("Enter the customer's ID: ");
-            fflush(stdin);
-            gets(current_node->customer_info.national_id);
-            printf("Enter the customer's phone number: ");
-            fflush(stdin);
-            gets(current_node->customer_info.phone_number);
-            printf("Enter the customer's birthdate (dd/mm/yy): ");
-            fflush(stdin);
-            gets(current_node->customer_info.birth_date);
-            printf("Enter the customer's account number: ");
-            scanf("%d", &current_node->customer_info.id_key);
+            int choice;
+            printf("Select what information you want to edit:\n");
+            printf("1: Name\n");
+            printf("2: Address\n");
+            printf("3: ID\n");
+            printf("4: Phone Number\n");
+            printf("5: Birthdate\n");
+            printf("6: Account Number\n");
+            scanf("%d", &choice);
+
+            switch (choice) {
+                case 1:
+                    printf("Enter the new name: ");
+                    fflush(stdin);
+                    gets(current_node->customer_info.customer_name);
+                    break;
+
+                case 2:
+                    printf("Enter the new address: ");
+                    fflush(stdin);
+                    gets(current_node->customer_info.customer_address);
+                    break;
+
+                case 3:
+                    printf("Enter the new ID: ");
+                    fflush(stdin);
+                    gets(current_node->customer_info.national_id);
+                    break;
+
+                case 4:
+                    printf("Enter the new phone number: ");
+                    fflush(stdin);
+                    gets(current_node->customer_info.phone_number);
+                    break;
+
+                case 5:
+                    printf("Enter the new birthdate (dd/mm/yy): ");
+                    fflush(stdin);
+                    gets(current_node->customer_info.birth_date);
+                    break;
+
+                case 6:
+                    printf("Enter the new account number: ");
+                    scanf("%d", &current_node->customer_info.id_key);
+                    break;
+
+                default:
+                    printf("Invalid choice\n");
+                    break;
+            }
 
             printf("Customer information has been updated.\n");
             return; // Exit the function after updating
@@ -103,7 +134,6 @@ void edit_account() {
 
     printf("Customer with account key %d not found.\n", account_key);
 }
-
 void customers_list() {
     Node *current_node = head;
 
@@ -118,7 +148,6 @@ void customers_list() {
         current_node = current_node->next;
     }
 }
-
 void transact() {
     int account_number;
     printf("\nEnter the account number of the customer to perform a transaction: ");
@@ -163,7 +192,6 @@ void transact() {
 
     printf("Customer with account number %d not found.\n", account_number);
 }
-
 void account_list() {
     int account_number;
     printf("\nEnter the account number of the customer: ");

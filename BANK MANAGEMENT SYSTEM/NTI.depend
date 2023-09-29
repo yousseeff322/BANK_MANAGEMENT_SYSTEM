@@ -18,7 +18,7 @@
 	"function.h"
 	<string.h>
 
-1696009952 source:c:\users\youssef\desktop\nti 4 months\c\bank management system\functions.c
+1696019249 source:c:\users\youssef\desktop\nti 4 months\c\bank management system\functions.c
 	"header.h"
 	"function.h"
 	<string.h>
@@ -30,8 +30,9 @@
 
 1695508025 c:\users\youssef\desktop\nti 4 months\c\bank management system\function.h
 
-1696012086 source:c:\users\youssef\desktop\nti 4 months\c\bank management system\main.c
+1696016622 source:c:\users\youssef\desktop\nti 4 months\c\bank management system\main.c
 	<stdio.h>
+	<stdlib.h>
 	"header.h"
 	"function.h"
 
