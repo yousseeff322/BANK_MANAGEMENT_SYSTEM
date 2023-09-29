@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1695509315 source:c:\users\youssef\desktop\nti 4 months\c\nti\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"header.h"
+	"function.h"
+
+1695509004 c:\users\youssef\desktop\nti 4 months\c\nti\header.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1695508025 c:\users\youssef\desktop\nti 4 months\c\nti\function.h
+
+1696009952 source:c:\users\youssef\desktop\nti 4 months\c\nti\functions.c
+	"header.h"
+	"function.h"
+	<string.h>
+
+1696009952 source:c:\users\youssef\desktop\nti 4 months\c\bank management system\functions.c
+	"header.h"
+	"function.h"
+	<string.h>
+
+1695509004 c:\users\youssef\desktop\nti 4 months\c\bank management system\header.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1695508025 c:\users\youssef\desktop\nti 4 months\c\bank management system\function.h
+
+1696012086 source:c:\users\youssef\desktop\nti 4 months\c\bank management system\main.c
+	<stdio.h>
+	"header.h"
+	"function.h"
+
